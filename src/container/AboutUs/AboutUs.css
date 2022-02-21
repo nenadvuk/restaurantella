@@ -42,7 +42,6 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-
   text-align: left;
 }
 
@@ -54,7 +53,7 @@
 
 @media screen and (max-width: 2000px) {
   .app__aboutus-content_knife img {
-    height: 910px;
+    height: 650px;
   }
 
   .app__aboutus-content_about p,
@@ -73,9 +72,12 @@
   }
 }
 
-/* @media screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {
   .app__aboutus-overlay img {
-    width: 80%;
+    /* width: 80%; */
     height: 720px;
   }
-} */
+  .app__aboutus-content_knife img {
+    height: 500px;
+  }
+}

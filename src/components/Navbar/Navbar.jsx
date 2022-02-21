@@ -9,7 +9,8 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.gericht} alt="app__logo" />
+       {/*  <img src={images.gericht} alt="app__logo" /> */}
+       Restaurantella
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans">
