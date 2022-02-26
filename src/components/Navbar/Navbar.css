@@ -103,6 +103,8 @@
 
 .burger{
   cursor: pointer;
+  outline: none;
+  user-select: none;
 }
 
 @media screen and (min-width: 2000px) {
