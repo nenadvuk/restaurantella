@@ -7,9 +7,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <nav className="app__navbar">
-      <div className="app__navbar-logo">
-       Restaurantella
-      </div>
+      <div className="app__navbar-logo">Restaurantella</div>
       <ul className="app__navbar-links">
         <li className="p__opensans">
           <a href="#home">Home</a>
@@ -38,6 +36,7 @@ const Navbar = () => {
       </div>
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu
+          className="burger"
           color="#fff"
           fontSize={27}
           onClick={() => setToggleMenu(true)}
@@ -51,19 +50,29 @@ const Navbar = () => {
             />
             <ul className="app__navbar-smallscreen_links">
               <li className="p__opensans">
-                <a href="#home">Home</a>
+                <a href="#home" onClick={() => setToggleMenu(false)}>
+                  Home
+                </a>
               </li>
               <li className="p__opensans">
-                <a href="#about">About</a>
+                <a href="#about" onClick={() => setToggleMenu(false)}>
+                  About
+                </a>
               </li>
               <li className="p__opensans">
-                <a href="#menu">Menu</a>
+                <a href="#menu" onClick={() => setToggleMenu(false)}>
+                  Menu
+                </a>
               </li>
               <li className="p__opensans">
-                <a href="#awards">Awards</a>
+                <a href="#awards" onClick={() => setToggleMenu(false)}>
+                  Awards
+                </a>
               </li>
               <li className="p__opensans">
-                <a href="#contact">Contact</a>
+                <a href="#contact" onClick={() => setToggleMenu(false)}>
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
